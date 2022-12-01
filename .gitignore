@@ -1,0 +1,15 @@
+.gradle
+build/
+
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+out/
+
+### Mac OS ###
+.DS_Store
