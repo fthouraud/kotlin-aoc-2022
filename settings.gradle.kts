@@ -7,4 +7,4 @@ dependencyResolutionManagement {
 }
 
 include("common")
-include("day-01")
+include("day-01", "day-02")
