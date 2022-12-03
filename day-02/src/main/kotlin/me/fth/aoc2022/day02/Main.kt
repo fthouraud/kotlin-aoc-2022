@@ -12,11 +12,11 @@ fun main() = withInput(input) {
 }
 
 context (InputContext)
-fun getMyScoreWithoutStrategy() = input.readText().lineSequence()
+fun getMyScoreWithoutStrategy() = lineSequence()
   .map { play -> play.first().toMove() versus play.last().toMove() }
   .sumOf { it.second }
 
 context (InputContext)
-fun getMyScoreWithStrategy() = input.readText().lineSequence()
+fun getMyScoreWithStrategy() = lineSequence()
   .map { play -> play.first().toMove().let { it versus it.expectedMove(play.last()) } }
   .sumOf { it.second }
