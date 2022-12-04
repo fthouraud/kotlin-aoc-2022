@@ -7,14 +7,14 @@ import me.fth.aoc2022.common.withInput
 class MainTest : ShouldSpec({
   val input = javaClass.getResource("/rucksacks-content.txt")
 
-  context("getMyScoreWithoutStrategy") {
+  context("getSumOfPrioritiesPerRucksacks") {
     should("get a total priority of 157") {
       withInput(input) {
         getSumOfPrioritiesPerRucksacks() shouldBe 157
       }
     }
   }
-  context("getMyScoreWithStrategy") {
+  context("getSumOfPrioritiesPerRucksackGroups") {
     should("get a total priority of 70") {
       withInput(input) {
         getSumOfPrioritiesPerRucksackGroups() shouldBe 70
