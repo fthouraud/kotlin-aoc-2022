@@ -1,14 +1,17 @@
 package me.fth.aoc2022.day01
 
 import me.fth.aoc2022.common.InputContext
+import me.fth.aoc2022.common.printMeasuredTime
 import me.fth.aoc2022.common.withInput
 import java.net.URL
 
 val input: URL = object {}.javaClass.getResource("/elves-calories.txt")
 
 fun main() = withInput(input) {
-  println("Greatest calories held: ${getGreatestCaloriesAmount()}")
-  println("Sum of top 3 greatest calories held: ${getTop3CaloriesAmount().sum()}")
+  printMeasuredTime {
+    println("Greatest calories held: ${getGreatestCaloriesAmount()}")
+    println("Sum of top 3 greatest calories held: ${getTop3CaloriesAmount().sum()}")
+  }
 }
 
 context(InputContext)

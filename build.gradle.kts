@@ -14,7 +14,7 @@ allprojects {
     withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
       kotlinOptions {
         jvmTarget = "17"
-        freeCompilerArgs += listOf("-Xcontext-receivers")
+        freeCompilerArgs += listOf("-Xcontext-receivers", "-opt-in=kotlin.time.ExperimentalTime")
       }
     }
     withType<io.gitlab.arturbosch.detekt.Detekt>().configureEach {

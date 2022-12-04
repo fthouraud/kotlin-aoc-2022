@@ -1,14 +1,17 @@
 package me.fth.aoc2022.day03
 
 import me.fth.aoc2022.common.InputContext
+import me.fth.aoc2022.common.printMeasuredTime
 import me.fth.aoc2022.common.withInput
 import java.net.URL
 
 val input: URL = object {}.javaClass.getResource("/rucksacks-content.txt")
 
 fun main() = withInput(input) {
-  println("Rucksacks sum of content's priorities: ${getSumOfPrioritiesPerRucksacks()}")
-  println("Rucksacks' groups sum of content's priorities: ${getSumOfPrioritiesPerRucksackGroups()}")
+  printMeasuredTime {
+    println("Rucksacks sum of content's priorities: ${getSumOfPrioritiesPerRucksacks()}")
+    println("Rucksacks' groups sum of content's priorities: ${getSumOfPrioritiesPerRucksackGroups()}")
+  }
 }
 
 context(InputContext)
